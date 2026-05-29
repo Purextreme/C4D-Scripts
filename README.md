@@ -27,3 +27,9 @@
 ## 使用说明
 将脚本放入 C4D 的脚本目录（`library/scripts`）即可在“扩展”菜单或命令面板中找到。
 以后我让 AI 写的代码脚本都放到这里，这样可以通过 GitHub 备份和存储。
+
+svg_spline_sweep_builder.py
+将选中的 SVG 样条线批量转换为带厚度的 Sweep 对象，并自动继承样条颜色生成纯发光材质，同时支持统一半径控制和随机 PSR 偏移。
+
+sketch_spline_color.py
+为选中的 C4D spline 或其子级 spline 批量创建 Sketch Style Tag 和对应 Sketch Material，自动读取 spline 的 Display Color 作为线条颜色，并在运行时输入统一线条厚度，用于生成不随透视距离明显变粗变细的彩色 Sketch 线条。
