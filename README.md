@@ -27,6 +27,7 @@ library/scripts
 | Batch Import SVG Assets | `Batch_Import_SVG_Assets.py` | 批量导入指定文件夹中的 SVG 文件，并把导入结果整理到 `Imported_SVG_Assets` 组下；单个 SVG 生成多个对象时会自动包一层 Null。 |
 | SVG Spline Sweep Builder | `SVG Spline Sweep Builder.py` | 将选中的 SVG Spline 批量转换为带厚度的 Sweep 对象，自动继承 Spline 显示颜色生成发光材质，并支持统一半径和随机 PSR 偏移。 |
 | Sketch Spline Color | `sketch_spline_color.py` | 为选中的 Spline 或子级 Spline 创建同色 Sketch Material 和 Sketch Style Tag，读取 Display Color 作为线条颜色，并可在运行时输入统一线条厚度。 |
+| SimilarMesh Grouper | `SimilarMesh Grouper.py` | 根据对象的包围盒尺寸比例、点数、面数等几何特征识别重复或相似模型，并自动整理到同一个 Null 组下，适合清理 CAD / STEP / FBX 导入后的重复零件层级。 |
 
 ## 维护说明
 
