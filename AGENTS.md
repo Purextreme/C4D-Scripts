@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository contains personal Cinema 4D production tools, targeting Cinema 4D 2024.5.1. Custom scripts usually live at the repository root as standalone `.py` files, for example `ResetPSR.py`, `Batch_Import_SVG_Assets.py`, and `SimilarMesh_SelectSimilar.py`. Matching `.tif` files are toolbar/menu icons and should stay next to their script.
+This repository contains personal Cinema 4D production tools, targeting Cinema 4D 2024.5.1. Custom scripts usually live at the repository root as standalone `.py` files, for example `Transform_ResetPSR.py`, `Import_BatchSVGAssets.py`, and `Select_SimilarMeshObjects.py`.
 
 Update `README.md` when adding or renaming a maintained script.
 
@@ -18,7 +18,7 @@ There is no build step. Scripts are loaded directly by Cinema 4D from `library/s
 
 Use Python with the Cinema 4D `c4d` API. Prefer small, single-purpose scripts that run from the Script Manager without extra setup. Simple top-level flow is acceptable for short utilities; use functions when logic grows.
 
-Use 4-space indentation. Keep file names descriptive and user-facing, using patterns such as `SimilarMesh_SelectSimilar.py` or `SVG Spline Sweep Builder.py`. Preserve Chinese names for existing Chinese workflow scripts. Keep comments brief, especially around C4D API behavior or scene mutations.
+Use 4-space indentation. Keep file names descriptive and user-facing. Script file names should be English and use a category prefix pattern such as `Select_`, `CleanUp_`, `Display_`, `Import_`, `Spline_`, `Material_`, `Transfer_`, `Analyze_`, `Group_`, `Animate_`, or `Transform_`. Avoid spaces and Chinese characters in script file names. Keep comments brief, especially around C4D API behavior or scene mutations.
 
 ## Testing Guidelines
 
@@ -32,4 +32,4 @@ Pull requests should include a concise description, scripts changed, manual Cine
 
 ## Agent-Specific Instructions
 
-Before editing, check for existing user changes and avoid unrelated cleanup. Do not overwrite generated icons or user-modified scripts unless the request specifically asks for it.
+Before editing, check for existing user changes and avoid unrelated cleanup. Do not reintroduce `.tif` icon files or overwrite user-modified scripts unless the request specifically asks for it.
